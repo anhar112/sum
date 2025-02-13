@@ -1,0 +1,41 @@
+import unittest
+from script import sum
+class SumTest(unittest.testcase)
+
+def test_sum(self):
+    result = sum(3 , 5)
+    self.assertEqual(result ,8)
+def test_str_handling(self):
+    result = sum("x" , "y") 
+    self.assertEqual(result ,invalide input)
+def test_handl_inputs(self):
+    result = sum( "x", 5)
+    self.assertEqual(result ,invalide input)
+
+unittest.main()
+
+
+def sum (x,y):
+    try:
+        result =int (x)+int(y)
+    except:
+        return "invalid input"    
+    return x , y
+
+
+
+
+import unittest
+
+def multiply(a, b):
+    return a * b
+
+class Test(unittest.TestCase):
+    def test_multi(self):
+        self.assertEqual(multiply(2, 3), 6)
+
+    def test_multi2(self):
+        self.assertEqual(multiply('s', 4), 8)
+
+if _name_ == '_main_':
+    unittest.main()
